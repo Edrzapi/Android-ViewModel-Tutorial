@@ -104,7 +104,7 @@ class CounterActivity : ComponentActivity() {
                 Button(
                     onClick = {
                         viewModel.counter = getCounterValue()
-                        stateModel.setCounter(viewModel.counter)
+                        stateModel.setCounter(getCounterValue())
                     },
                     modifier = Modifier.padding(16.dp)
                 ) {
